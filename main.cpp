@@ -150,6 +150,7 @@ int main() {
         strncat(decrypted_string, &character, 1);
         token = strtok(NULL, " ");
     }
-    std::cout<<"Decryption: "<<decrypted_string<<std::endl;
+    bool is_valid = strcmp(message_string, decrypted_string);
+    std::cout << is_valid;
     return 0;
 }
