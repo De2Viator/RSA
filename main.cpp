@@ -4,6 +4,7 @@
 #include <map>
 #include <cmath>
 #include <cstring>
+#include <random>
 
 typedef std::map<unsigned long long, unsigned long long> PrimeNumbers;
 struct ErtasophenInfo {
@@ -100,10 +101,22 @@ unsigned long long decrypt(unsigned long long cypher, unsigned long long private
     return decrypted;
 }
 
+unsigned long long generate_random_number() {
+        std::random_device rd;
+        std::mt19937 gen(rd());
+        std::uniform_int_distribution<int> distribution(3, 71);
+        int random_number = distribution(gen);
+        return random_number;
+};
+
 int main() {
     srand(time(NULL));
-    unsigned long long p = 31;
-    unsigned long long q = 19;
+    unsigned long long p;
+    unsigned long long q;
+    while (euclide_algroythm(p,q) != 1) {
+        p = generate_random_number();
+        q = generate_random_number();
+    }
     if(euclide_algroythm(p,q) != 1) {
         return -1;
     }

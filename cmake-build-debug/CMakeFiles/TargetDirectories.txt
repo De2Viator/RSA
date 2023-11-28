@@ -1,3 +1,0 @@
-C:/Users/Yurij/CLionProjects/krypto_8/cmake-build-debug/CMakeFiles/krypto_8.dir
-C:/Users/Yurij/CLionProjects/krypto_8/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Yurij/CLionProjects/krypto_8/cmake-build-debug/CMakeFiles/rebuild_cache.dir
